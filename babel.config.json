@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // 环境采用 .browserslistrc 中的配置（优点：可以被搭配更多的工具）
+        "targets": {
+          // "ie": "9"
+          // "edge": "17",
+          // "firefox": "60",
+          // "chrome": "67",
+          // "safari": "11.1"
+        }
+        // "useBuiltIns": "usage" 
+        // "corejs": "3.2"
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "classic"
+      }
+    ],
+    [
+      "@babel/preset-typescript"
+    ]
+  ]
+}
